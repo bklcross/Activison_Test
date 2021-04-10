@@ -1,5 +1,3 @@
-/***** mobile first css *****/
-
 /* global edits */
 html, body {
     margin: 0;
@@ -14,7 +12,7 @@ html, body {
 
 /* main container edits */
 .main-container {
-    background-image: url("./image/Hero_img_mobile_01.jpg");
+    background-image: url("./image/hero_img_01.jpg");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,30 +22,44 @@ html, body {
     background-size: cover;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 992px) {
     .main-container {
-        background-image: url("./image/hero_img_01.jpg");
+        background-image: url("./image/Hero_img_mobile_01.jpg");
     }
 }
 
 /* paragraph edit */
 .hero-text {
     color: #FFFFFF;
-    font-size: 36px;
+    font-size: 32px;
     font-family: 'Arimo', sans-serif;
     letter-spacing: 4px;
-    max-width: 1150px;
+    max-width: 1050px;
     text-align: center;
+    margin: 40px;
+    padding-top: 56px;
+}
+
+@media (max-width: 992px) {
+    .hero-text {
+        padding-top: 250px;
+    }
 }
 
 /* learn more button edits*/
 #learn-more-btn {
-    padding: 24px;
-    font-size: 24px;
+    padding: 16px 24px;
+    font-size: 20px;
     text-transform: uppercase;
     font-family: 'Arimo', sans-serif;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     font-weight: 600;
+    color: #343A40;
+    width: 250px;
+    border: 2px solid#FFFFFF;
+    background: linear-gradient( 
+180deg
+ , rgba(179,181,184,1) 0%, rgb(223 227 230) 37%);
 }
 
 /* close button edits */
@@ -94,4 +106,16 @@ html, body {
 
 .modal-inner-container {
     position: relative;
+}
+
+iframe {
+    width: 750px;
+    height: 450px;
+}
+
+@media (max-width: 768px) {
+    iframe {
+        width: 350px;
+        height: 200px;
+    }
 }
