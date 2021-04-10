@@ -5,15 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
     <div class="main-container">
         <p class="hero-text">
             The world's first independent developer and distributor of video console games & one of the largest third party video game publishers in the world.
         </p>
-        <form action="https://youtu.be/pPjT_CWxrhY">
-            <input type="submit" value="Go to activision history" />
-        </form>
+        <button id="learn-more-btn">
+            Learn More
+        </button>
     </div>
+    <div class="modal-container hide">
+        <div class="modal-overlay"></div>
+        <div class="modal">
+            <div class="modal-inner-container">
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/pPjT_CWxrhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <button id="close-btn">close</button>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts.js"></script>
 </body>
-</html>
+</html>s
