@@ -17,14 +17,57 @@ html, body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100%;
+    height: 1200px;
     background-position: center;
     background-size: cover;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1739px) {
+    .main-container {
+        max-height: 1100px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .main-container {
+        max-height: 930px;
+    }
+}
+
+@media (max-width: 1360px) {
+    .main-container {
+        max-height: 700px;
+    }
+}
+
+@media (max-width: 1020px) {
+    .main-container {
+        max-height: 500px;
+    }
+}
+
+@media (max-width: 768px) {
     .main-container {
         background-image: url("./image/Hero_img_mobile_01.jpg");
+        max-height: 1500px;
+    }
+}
+
+@media (max-width: 670px) {
+    .main-container {
+        max-height: 1000px;
+    }
+}
+
+@media (max-width: 570px) {
+    .main-container {
+        max-height: 900px;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-container {
+        max-height: 700px;
     }
 }
 
@@ -37,12 +80,24 @@ html, body {
     max-width: 1050px;
     text-align: center;
     margin: 40px;
-    padding-top: 56px;
+    padding-top: 32px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1020px) {
     .hero-text {
-        padding-top: 250px;
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-text {
+        padding-top: 200px;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero-text {
+        padding-top: 100px;
     }
 }
 
